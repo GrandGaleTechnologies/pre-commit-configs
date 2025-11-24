@@ -9,7 +9,7 @@ repos:
 
   # Flake8 (additional lint checks)
   - repo: https://github.com/pycqa/flake8
-    rev: 7.3.0  # Use the latest stable version
+    rev: 7.3.0
     hooks:
       - id: flake8
         args:
@@ -19,7 +19,7 @@ repos:
           - --show-source
           - --statistics
 
-   #  Custom UV Type Checker (ty)
+  # Custom UV Type Checker (ty)
   - repo: local
     hooks:
       - id: ty
@@ -28,7 +28,6 @@ repos:
         language: system
         types: [python]
 
-
   # Pytest (testing)
   - repo: local
     hooks:
@@ -36,7 +35,7 @@ repos:
         name: Run Pytest
         entry: pytest
         language: system
-        pass_filenames: false      
+        pass_filenames: false
         types: [python]
         always_run: true
         stages: [pre-commit]
