@@ -38,4 +38,4 @@ repos:
         pass_filenames: false
         types: [python]
         always_run: true
-        stages: [pre-commit]
+        stages: [commit]
